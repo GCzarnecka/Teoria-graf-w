@@ -1,2 +1,2 @@
-# Teoria-graf-w
+# Teoria_grafow
 Projekt zaliczeniowy
