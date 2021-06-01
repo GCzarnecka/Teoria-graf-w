@@ -1,9 +1,8 @@
-# Projekt zaliczeniowy
-**Algorytm Bellmana-Forda**
+# Analiza algorytmu Bellmana-Forda
 
-Jakie problemy rozwiązuje?
+**Jakie problemy rozwiązuje?**
 * Służy do rozwiązywania problemu najkrótszych ścieżek, w którym wagi na krawędziach mogą być ujemne
-* Algorytm ten zwraca wartość logiczną, czy istnieje cykl o ujemnej wadze osiągalny ze źródła
+* Algorytm ten zwraca wartość logiczną, czy istnieje cykl o ujemnej wadze, który jest osiągalny ze źródła
 * Jeśli taki cykl istnieje, to w grafie tym nie można obliczyć najkrótszych ścieżek
 * Jeśli takiego cyklu nie ma, algorytm oblicza najkrótsze ścieżki i ich wagi
 * Opiera się na metodzie relaksacji
@@ -26,3 +25,8 @@ Ilość przeskoków określa liczbę routerów występujących między źródło
 #### Dodatkowe cechy charakterystyczne protokołu:
 * Informacje o trasach są wysyłane w stałych odstępach czasowych - domyślnie w odstępie co 30 sekund.
 * Aktualizacje trasowania są rozgłaszane tylko do routerów sąsiednich (routing on rumours)
+#### Aplikacje w routingu
+**Etapy**
+1. Każdy węzeł oblicza dystans pomiędzy sobą i wszystkimi innymi węzłami i zapisuje tę informację w postaci tabeli.
+2. Każdy węzeł wysyła swoją tablicę do wszystkich węzłów sąsiednich.
+3. Kiedy węzeł otrzymuje tablicę odległości od sąsiadów, oblicza najkrótsze trasy do wszystkich innych węzłów i aktualizuje własną tabelę, aby odzwierciedlić wszelkie zmiany. 
