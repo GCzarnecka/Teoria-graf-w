@@ -1,2 +1,1 @@
-# Teoria grafow
-Projekt zaliczeniowy
+# Projekt zaliczeniowy
